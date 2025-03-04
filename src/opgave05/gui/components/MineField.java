@@ -1,11 +1,11 @@
-package opgave06.gui.components;
+package opgave05.gui.components;
 
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
-import opgave06.application.Controller;
-import opgave06.application.model.Point;
+import opgave05.application.Controller;
+import opgave05.application.model.Point;
 
 public class MineField extends GridPane {
     public MineField(int size) {

@@ -1,4 +1,4 @@
-package opgave06.application.model;
+package opgave05.application.model;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -50,40 +50,5 @@ public class Board {
         board[point.getX()][point.getY()].set(value);
     }
 
-    public boolean containsMine(Point point) {
-        return isMine[point.getX()][point.getY()];
-    }
 
-    public int adjacentMines(Point point) {
-        if (!getField(point).equals(" ")) return 0;
-        int number = 0;
-        int[] mod = {-1, 0, 1};
-        for (int y = 0; y < mod.length; y++) {
-            for (int x = 0; x < mod.length; x++) {
-                int xmod = point.getX() + mod[x];
-                int ymod = point.getY() + mod[y];
-                if ((xmod >= 0 && xmod < isMine.length
-                        && ymod >= 0 && ymod < isMine.length)
-                        && isMine[xmod][ymod]) {
-                    number++;
-                }
-            }
-        }
-        if (getField(point).equals(" ")) {
-            setField(point, String.valueOf(number));
-        }
-        if (number == 0) {
-            for (int y = 0; y < mod.length; y++) {
-                for (int x = 0; x < mod.length; x++) {
-                    int xmod = point.getX() + mod[x];
-                    int ymod = point.getY() + mod[y];
-                    if ((xmod >= 0 && xmod < isMine.length
-                            && ymod >= 0 && ymod < isMine.length)) {
-                        adjacentMines(new Point(xmod, ymod));
-                    }
-                }
-            }
-        }
-        return number;
-    }
 }

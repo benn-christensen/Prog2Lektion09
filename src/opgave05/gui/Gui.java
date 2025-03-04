@@ -1,7 +1,7 @@
-package opgave06.gui;
+package opgave05.gui;
 
-import opgave06.gui.components.MineField;
-import opgave06.gui.components.TopPane;
+import opgave05.gui.components.MineField;
+import opgave05.gui.components.TopPane;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;

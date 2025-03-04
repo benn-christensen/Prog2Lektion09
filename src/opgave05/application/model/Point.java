@@ -1,4 +1,4 @@
-package opgave06.application.model;
+package opgave05.application.model;
 
 import java.util.Objects;
 
