@@ -1,0 +1,7 @@
+.field { -fx-background-color: lightgrey;
+       }
+Label { -fx-font-size: 20px;
+        -fx-padding: 5;
+}
+
+.flag { -fx-color: red;}
