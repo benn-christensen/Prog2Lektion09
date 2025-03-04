@@ -1,10 +1,9 @@
-package opgave02.gui.components;
+package opgave06.gui.components;
 
 import javafx.beans.binding.Bindings;
-import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
-import opgave02.application.Controller;
+import opgave06.application.Controller;
 
 public class TopPane extends HBox {
     public TopPane() {

@@ -1,9 +1,9 @@
-package opgave02.application;
+package opgave06.application;
 
 import javafx.beans.property.StringProperty;
 import javafx.scene.input.MouseButton;
-import opgave02.application.model.Board;
-import opgave02.application.model.Point;
+import opgave06.application.model.Board;
+import opgave06.application.model.Point;
 
 public class Controller {
     private static Board board = new Board(9, 10);

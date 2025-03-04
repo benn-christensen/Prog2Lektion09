@@ -1,4 +1,4 @@
-package opgave02.gui;
+package opgave06.gui;
 
 import javafx.application.Application;
 
